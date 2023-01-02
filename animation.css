@@ -1,0 +1,45 @@
+/* test box ani */
+#scroll-container {
+  padding: 1rem 0 1rem 0;
+  overflow: hidden;
+  /* border: 2px solid; */
+  background-color: black;
+  font-size: 14px;
+
+}
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: my-animation 9s linear infinite;
+  -webkit-animation: my-animation 9s linear infinite;
+  animation: my-animation 18s linear infinite;
+  color: white;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }}
+
+/* test */
