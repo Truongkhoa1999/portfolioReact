@@ -1,0 +1,113 @@
+/* setting sun moon and earth */
+.center__text {
+    color: var(--neutral);
+    margin: auto;
+    z-index: 1;
+    color: var(--neutral);
+    padding: 24px;
+    box-sizing: border-box;
+  
+  }
+  
+  .center__text:hover {
+    color: var(--ultraLight);
+  
+  }
+  
+  #center {
+    color: black !important;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.75s;
+  
+  }
+  
+  #center:hover {
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondNeutral);
+    transform: scale(1.05);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -54%);
+  }
+  
+  #center #sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(224, 175, 0, 46);
+    box-shadow: 0 0 15px rgba(148, 115, 0, 0.5),
+      0 0 30px rgba(148, 115, 0, 0.5),
+      0 0 45px rgba(148, 115, 0, 0.5),
+      0 0 60px rgba(148, 115, 0, 0.5),
+      0 0 15px rgba(148, 115, 0, 0.5);
+  }
+  
+  #center #sun #earth {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 50%;
+    width: 150px;
+    height: 2px;
+    transform-origin: left;
+    animation: rotate 10s linear infinite;
+  
+  
+  }
+  
+  #center #sun #earth:before {
+    content: url(../Photo/globe.png);
+    position: absolute;
+    top: -25px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(224, 175, 0, 46);
+  
+    box-shadow: 0 0 15px rgba(148, 115, 0, 0.5),
+    0 0 30px rgba(148, 115, 0, 0.5),
+    0 0 45px rgba(148, 115, 0, 0.5),
+    0 0 60px rgba(148, 115, 0, 0.5),
+    0 0 15px rgba(148, 115, 0, 0.5);
+    animation: rotate 10s linear infinite;
+  }
+  
+  #center #sun #earth #moon {
+    position: absolute;
+    right: 25px;
+    width: 60px;
+    height: 1px;
+    transform-origin: right;
+    animation: rotate 5s linear infinite;
+  
+  }
+  
+  #center #sun #earth #moon:before {
+    content: url(../Photo/moon.png);
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  @keyframes rotate {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }

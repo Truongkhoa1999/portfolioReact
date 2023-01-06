@@ -1,0 +1,32 @@
+/* FRAME ABOUT */
+  .about_column {
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid white;
+  }
+  
+  .about_logo {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .about_logo,
+  .about_content {
+    margin: auto;
+    text-align: left;
+  }
+  
+  .about_heading {
+    font-size: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  
+  .about_title {
+    color: whitesmoke;
+  }
+  
