@@ -1,224 +1,71 @@
 /* FRAME 1 */
 /* elements setting */
 #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    grid-area: video;
-  }
-  
-  #frame1__wrapper {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    align-items: stretch;
-    grid-template-rows: 1fr 4fr;
-    grid-template-areas:
-      "nav"
-      "header";
-    background-color: transparent;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    grid-area: frame1;
-    overflow-x: hidden;
-  }
-  
-  #nav__wrapper {
-    grid-area: nav;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 0;
-  }
-  
-  .nav__btn {
-    text-align: right;
-    width: auto;
-    min-height: 1rem;
-    padding: 1rem 1rem 0 0;
-    text-decoration: none;
-    margin-right: 1rem;
-    color: var(--secondNeutral);
-  }
-  
-  .nav__btn:hover {
-    height: auto;
-    color: var(--light);
-    border-bottom: 2px solid var(--dark);
-    border-radius: 90%;
-    transition: 0.5s;
-    scale: 1.5;
-    margin-top: 1rem;
-    box-sizing: border-box;
-    padding: 0.5rem;
-    margin-right: 2rem;
-    text-transform: uppercase;
-    background-image: linear-gradient(
-      -225deg,
-      #231557 0%,
-      #44107a 29%,
-      #ff1361 67%,
-      #fff800 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    /* text-fill-color: transparent; */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-  }
-  
-  ul li {
-    color: white;
-    list-style-type: none;
-  }
-  
-  .header_des {
-    background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
-    -webkit-background-size: 150px;
-    color: rgba(255, 255, 255, 0.3);
-    -webkit-background-clip: text;
-    animation: shine 3s infinite;
-    text-shadow: 0 0px 0px rgba(224, 175, 0, 0.5);
-    font-size: 20px;
-  }
-  
-  .header_title {
-    font-size: 60px;
-  }
-  
-  #header__wrapper {
-    display: flex;
-    height: 50vh;
-    flex-direction: column;
-    grid-area: header;
-    justify-content: center;
-    transition: 0.1s;
-    box-sizing: border-box;
-  }
-  
-  #heading {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    margin: auto;
-  
-  
-  }
-  
-  /* setting sun moon and earth */
-  .center__text {
-    color: var(--neutral);
-    margin: auto;
-    z-index: 1;
-    color: var(--neutral);
-    padding: 24px;
-    box-sizing: border-box;
-  
-  }
-  
-  .center__text:hover {
-    color: var(--ultraLight);
-  
-  }
-  
-  #center {
-    color: black !important;
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    transition: 0.75s;
-  
-  }
-  
-  #center:hover {
-    width: 100px;
-    height: 100px;
-    background-color: var(--secondNeutral);
-    transform: scale(1.05);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -54%);
-  }
-  
-  #center #sun {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: rgba(224, 175, 0, 46);
-    box-shadow: 0 0 15px rgba(148, 115, 0, 0.5),
-      0 0 30px rgba(148, 115, 0, 0.5),
-      0 0 45px rgba(148, 115, 0, 0.5),
-      0 0 60px rgba(148, 115, 0, 0.5),
-      0 0 15px rgba(148, 115, 0, 0.5);
-  }
-  
-  #center #sun #earth {
-    position: absolute;
-    top: calc(50% - 1px);
-    left: 50%;
-    width: 150px;
-    height: 2px;
-    transform-origin: left;
-    animation: rotate 10s linear infinite;
-  
-  
-  } 
-  
-  #center #sun #earth:before {
-    /* content: url(photo/globe.png); */
-    position: absolute;
-    top: -25px;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(224, 175, 0, 46);
-  
-    box-shadow: 0 0 15px rgba(148, 115, 0, 0.5),
-    0 0 30px rgba(148, 115, 0, 0.5),
-    0 0 45px rgba(148, 115, 0, 0.5),
-    0 0 60px rgba(148, 115, 0, 0.5),
-    0 0 15px rgba(148, 115, 0, 0.5);
-    animation: rotate 10s linear infinite;
-  }
-  
-  #center #sun #earth #moon {
-    position: absolute;
-    right: 25px;
-    width: 60px;
-    height: 1px;
-    transform-origin: right;
-    animation: rotate 5s linear infinite;
-  
-  }
-  
-  #center #sun #earth #moon:before {
-    /* content: url(photo/moon.png); */
-    position: absolute;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-  }
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  grid-area: video;
+}
+
+#frame1__wrapper {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  align-items: stretch;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    "nav"
+    "header";
+  background-color: transparent;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  grid-area: frame1;
+  overflow-x: hidden;
+}
+
+#nav__wrapper {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+}
+
+#header__wrapper {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  grid-area: header;
+  justify-content: center;
+  transition: 0.1s;
+  box-sizing: border-box;
+}
+/* Frame3 */
+#frame_about {
+  grid-area: about;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 6rem;
+  background-color: transparent;
+  border: 2px solid red;
+
+}
+/* footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  grid-area: footer;
+  background-color: rgb(2, 2, 31);
+  background-size: cover;
+  max-height: 80rem;
+}

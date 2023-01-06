@@ -9,8 +9,8 @@
 
   /* --haaga: url(photo/haaga.png);
   --free: url(photo/free.png);
-  --meh: url(photo/meh.png);
-  --footer: url(photo/footer.png); */
+  --meh: url(photo/meh.png);*/
+  /* --footer: url(../Photo/footer.png)  */
 
 }
 
@@ -43,10 +43,6 @@ body {
     "about"
     "footer"
     "scroll";
-}
-
-.title-text {
-  color: var(--light);
 }
 
 .title-text2 {
