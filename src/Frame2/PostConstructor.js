@@ -1,4 +1,5 @@
 import "../Style/PostTemplate.css";
+import jsdata from "../Data/Frame2Data.json"
 function PostConstructor(props) {
   return (
     <div>

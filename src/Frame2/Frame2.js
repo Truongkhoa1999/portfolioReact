@@ -1,42 +1,51 @@
-import PostItem from "./PostItem";
+
 import "../Style/Frame2.css";
 import FilterButton from "./FilterButton";
 import { useState, useRef } from 'react';
+import jsdata from "../Data/Frame2Data.json"
+import { Frame2Data } from "../Data/Frame2Data";
+import PostConstructor from "./PostConstructor";
 
 function Frame2() {
-    const [items, setItems] = useState([
-        { id: 1, type: 'fruit', name: 'Apple' },
-        { id: 2, type: 'fruit', name: 'Banana' },
-        { id: 3, type: 'vegetable', name: 'Carrot' },
-        { id: 4, type: 'vegetable', name: 'Potato' },
-        { id: 5, type: 'meat', name: 'Beef' },
-        { id: 6, type: 'meat', name: 'Chicken' }
-      ]);
-      const [filteredItems, setFilteredItems] = useState(items);
-    
-      function handleFilterClick(event) {
-        const type = event.target.dataset.filter;
-        const filtered = items.filter(item => item.type === type);
-        setFilteredItems(filtered);
-      }
-    
-      return (
-        <div>
-          <button onClick={handleFilterClick} data-filter="fruit">
-            Fruit
+  const [items, setItems] = useState(jsdata.data);
+  const [filteredItems, setFilteredItems] = useState(items);
+
+  function handleFilterClick(event) {
+    const type = event.target.dataset.filter;
+    const filtered = items.filter(item => item.type === type);
+    setFilteredItems(filtered);
+  }
+
+  return (
+    <div className="frame2__wrapper" id="main">
+      <section id="filter">
+        <div id="filter_button"> <button className="btn btn-primary" onClick={handleFilterClick} data-filter="Ecommerce">
+          Ecommerce
+        </button>
+          <button className="btn btn-primary" onClick={handleFilterClick} data-filter="Business">
+            Business
           </button>
-          <button onClick={handleFilterClick} data-filter="vegetable">
-            Vegetable
-          </button>
-          <button onClick={handleFilterClick} data-filter="meat">
-            Meat
-          </button>
-          <ul>
-            {filteredItems.map(item => (
-              <li key={item.id}>{item.name}</li>
-            ))}
-          </ul>
-        </div>
-      );
+          <button className="btn btn-primary" onClick={handleFilterClick} data-filter="WebApp">
+            WebApp
+          </button> </div>
+      </section>
+      <div id="filter-data">
+        
+          {filteredItems.map(item => (
+            <div id="filter-data"> 
+             <article className="element_projects">
+               <PostConstructor
+              key={item.id}
+              image={item.image}
+              type={item.type}
+              source={item.source} />
+            </article>
+            </div>
+          )
+          )
+          }
+      </div>
+    </div>
+  );
 }
 export default Frame2;

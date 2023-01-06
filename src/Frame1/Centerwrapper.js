@@ -7,7 +7,7 @@ return (
     <div id="center__wrapper">
     <a href="#main">
       <div id="center">
-        <div className="center__text title-text2">START</div>
+        <div className="center__text title-text2" href="#main">START</div>
         <div id="sun">
           <div id="earth">
             <div id="moon"></div>
