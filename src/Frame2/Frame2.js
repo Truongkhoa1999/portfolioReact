@@ -32,10 +32,11 @@ function Frame2() {
       <div id="filter-data">
         
           {filteredItems.map(item => (
-            <div id="filter-data"> 
+            <div  id="filter-data" > 
              <article className="element_projects">
                <PostConstructor
               key={item.id}
+              title = {item.title}
               image={item.image}
               type={item.type}
               source={item.source} />
