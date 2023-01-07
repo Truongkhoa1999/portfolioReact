@@ -1,9 +1,8 @@
 article {
-    margin: 3rem 4rem 3rem 4rem;
-  
+    margin:2rem;
   }
   .element_projects:hover{
-    scale: 1.15;
+    scale: 1.05;
     transition: 0.75s;
     cursor: pointer;
   }

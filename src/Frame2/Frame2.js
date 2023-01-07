@@ -30,10 +30,9 @@ function Frame2() {
           </button> </div>
       </section>
       <div id="filter-data">
-        
           {filteredItems.map(item => (
-            <div  id="filter-data" > 
-             <article className="element_projects">
+            <div className="articleWrapper">
+                           <article className="element_projects">
                <PostConstructor
               key={item.id}
               title = {item.title}
@@ -41,7 +40,9 @@ function Frame2() {
               type={item.type}
               source={item.source} />
             </article>
+            
             </div>
+
           )
           )
           }
