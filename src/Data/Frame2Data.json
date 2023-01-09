@@ -1,91 +1,91 @@
 {
-    "data": [
-        {
-            "id": 1,
-            " title": "this is an example",
-            "type": "Ecommerce",
-            "name": "Apple",
-            "title":"Restaurant Landing Page",
-            "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
-            "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
-        },
-        {
-            "id": 2,
-            "type": "Business",
-            "name": "Banana",
-            "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
-            "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
-        },
-        {
-            "id": 3,
-            "type": "WebApp",
-            "name": "HAHA",
-            "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
-            "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
-        },
-        {
-            "id": 4,
-            "type": "WebApp",
-            "name": "HAHA",
-            "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
-            "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
-        },
-        {
-            "id": 5,
-            "type": "WebApp",
-            "name": "HAHA",
-            "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
-            "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
-        },
-        {
-            "id": 6,
-            "type": "WebApp",
-            "name": "HAHA",
-            "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
-            "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
-        },
-        {
-            "id": 7,
-            "type": "WebApp",
-            "name": "HAHA",
-            "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
-            "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
-        },
-        {
-            "id": 8,
-            "type": "WebApp",
-            "name": "HAHA",
-            "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
-            "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
-        },
-        {
-            "id": 9,
-            "type": "WebApp",
-            "name": "HAHA",
-            "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
-            "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
-        },
-        {
-            "id": 10,
-            "type": "WebApp",
-            "name": "HAHA",
-            "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
-            "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
-        },
-        {
-            "id": 11,
-            "type": "WebApp",
-            "name": "HAHA",
-            "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
-            "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
-        },
-        {
-            "id": 12,
-            "type": "WebApp",
-            "name": "HAHA",
-            "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
-            "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
-        }
-        
-    ]
+  "data": [
+    {
+      "id": 1,
+      " title": "this is an example",
+      "type": "Website",
+      "title": "FineDining",
+      "image": "http://truongkhoaportfolio.com/wp-content/uploads/2023/01/finedin-1024x576.png",
+      "source": "https://fancy-tiramisu-211459.netlify.app/index.html",
+      "icon": "faCoffee"
+    },
+    {
+      "id": 2,
+      "type": "Website",
+      "title": "Mehtaheino",
+      "image": "http://truongkhoaportfolio.com/wp-content/uploads/2023/01/mehtaheino-1024x576.png",
+      "source": "https://www.figma.com/proto/Vs99NcXyIuUnyuuOoRmZXt/WebProject?node-id=1303%3A117&scaling=scale-down&page-id=136%3A165&starting-point-node-id=136%3A818&show-proto-sidebar=1"
+    },
+    {
+      "id": 3,
+      "type": "Website",
+      "title": "Previous Portfolio",
+      "image": "http://truongkhoaportfolio.com/wp-content/uploads/2023/01/oldpor-300x169.png",
+      "source": "https://truongkhoaportfolio.com/"
+    },
+    {
+      "id": 4,
+      "type": "Website",
+      "title": "MiuTi",
+      "image": "http://truongkhoaportfolio.com/wp-content/uploads/2023/01/miuti-300x169.png",
+      "source": "https://tangerine-zuccutto-0dee2a.netlify.app/"
+    },
+
+    {
+      "id": 5,
+      "type": "WebApp",
+      "name": "HAHA",
+      "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
+      "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
+    },
+    {
+      "id": 6,
+      "type": "WebApp",
+      "name": "HAHA",
+      "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
+      "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
+    },
+    {
+      "id": 7,
+      "type": "WebApp",
+      "name": "HAHA",
+      "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
+      "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
+    },
+    {
+      "id": 8,
+      "type": "WebApp",
+      "name": "HAHA",
+      "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
+      "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
+    },
+    {
+      "id": 9,
+      "type": "WebApp",
+      "name": "HAHA",
+      "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
+      "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
+    },
+    {
+      "id": 10,
+      "type": "WebApp",
+      "name": "HAHA",
+      "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
+      "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
+    },
+    {
+      "id": 11,
+      "type": "WebApp",
+      "name": "HAHA",
+      "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
+      "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
+    },
+    {
+      "id": 12,
+      "type": "WebApp",
+      "name": "HAHA",
+      "image": "https://static-cse.canva.com/blob/951427/1600w-CrM91Tjbmbc.jpg",
+      "source": "https://fancy-tiramisu-211459.netlify.app/index.html"
+    }
+  ]
 }

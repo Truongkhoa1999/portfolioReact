@@ -1,17 +1,10 @@
 /** universe settings**/
 :root {
   --ultraDark: rgb(2, 2, 31);
-  --neutral: #0117E0;
+  --neutral: #0117e0;
   --light: #2b40fb;
   --secondDark: #947300;
-  --secondNeutral: #E0AF00;
-  /* image lib */
-
-  /* --haaga: url(photo/haaga.png);
-  --free: url(photo/free.png);
-  --meh: url(photo/meh.png);*/
-  /* --footer: url(../Photo/footer.png)  */
-
+  --secondNeutral: #e0af00;
 }
 
 html {
@@ -19,37 +12,16 @@ html {
   display: grid;
   scroll-behavior: smooth;
   transition: 1s;
-  /* cursor: none; */
 }
-
 * {
-  /** model box**/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
-
-
-body {
-  /** font from GOOGLE FONTS **/
-  font-family: 'Spline Sans Mono', monospace;
-  line-height: 1.5;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    "frame1"
-    "main"
-    "about"
-    "footer"
-    "scroll";
-}
-
 .title-text2 {
   color: var(--neutral);
 }
-
-.btn{
+.btn {
   display: inline-block;
   outline: none;
   cursor: pointer;
@@ -60,32 +32,50 @@ body {
   color: #fff;
   background: #000a47;
   line-height: 1.15;
-  font-size: 16px;}
-  .btn:hover {
-      transition: all .1s ease;
-      box-shadow: 0 0 0 0 #fff, 0 0 0 3px var(--secondNeutral);
+  font-size: 16px;
+}
+.btn:hover {
+  transition: all 0.1s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 3px var(--secondNeutral);
 }
 
-
-
-.btn-primary+.btn-primary {
+.btn-primary + .btn-primary {
   margin-left: 30px;
-
   font-weight: bold;
 }
-
 a {
   text-decoration: none;
 }
-
-.fa-search {
-  color: white;
-  margin-right: 1rem;
+/* Web skeleton settings */
+.mainWrapper {
+  /** font from GOOGLE FONTS **/
+  font-family: "Spline Sans Mono", monospace;
+  line-height: 1.5;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "frame1"
+    "main"
+    "about"
+    "footer"
+    "scroll";
 }
-
-#start,
-#project,
-#about,
-#contact {
+/* Frame1 */
+#frame1__wrapper {
+  grid-area: frame1;
+}
+/* Frame2 */
+.frame2__wrapper {
+  padding: 0;
   margin: 0;
+  grid-area: main;
+  background-color: var(--ultraDark);
+}
+/* Frame3 */
+#frame3__wrapper {
+  grid-area: about;
+}
+/* footer */
+#footer {
+  grid-area: footer;
 }

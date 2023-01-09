@@ -1,5 +1,7 @@
 import "../Style/PostTemplate.css";
 import jsdata from "../Data/Frame2Data.json"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 function PostConstructor(props) {
   return (
     <div>
@@ -11,7 +13,7 @@ function PostConstructor(props) {
               <h1 className="name_item">{props.title}</h1>
               <h1 className="type">{props.type}</h1>
               <div id="logo__wrapper">
-                <i className="fa-brands fa-html5"></i>
+                <FontAwesomeIcon className="fa-brands fa-html5" icon={props.icon}></FontAwesomeIcon>
                 <i className="fa-brands fa-css3"></i>
               </div>
             </div>

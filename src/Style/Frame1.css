@@ -23,7 +23,6 @@
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  grid-area: frame1;
   overflow-x: hidden;
 }
 
@@ -43,28 +42,4 @@
   justify-content: center;
   transition: 0.1s;
   box-sizing: border-box;
-}
-/* Frame3 */
-#frame_about {
-  grid-area: about;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 6rem;
-  background-color: transparent;
-
-}
-/* footer */
-#footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  grid-area: footer;
-  background-color: rgb(2, 2, 31);
-  background-size: cover;
-  max-height: 80rem;
 }

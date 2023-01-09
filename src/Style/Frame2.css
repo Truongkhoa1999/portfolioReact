@@ -50,4 +50,5 @@ a {
 .active {
   background: yellow !important;
   color: blue;
+  width: 2rem;
 }

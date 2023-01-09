@@ -1,4 +1,16 @@
 /* FRAME ABOUT */
+#frame_about {
+  grid-area: about;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 6rem;
+  background-color: transparent;
+
+}
   .about_column {
     width: 15rem;
     height: 15rem;
